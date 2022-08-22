@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.demo.entity.Pays;
 import com.example.demo.entity.TypeCritere;
 
-public interface TypeCritereRepository extends JpaRepository<TypeCritere, Long > {
-	public List<TypeCritere> findByOrderByTypeCritereIdDesc();
+public interface PaysRepository extends JpaRepository<Pays, Integer >{
+	public List<Pays> findByOrderByPaysIdDesc();
 }

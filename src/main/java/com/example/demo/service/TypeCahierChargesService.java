@@ -24,19 +24,19 @@ public class TypeCahierChargesService {
 		t1=repo1.getById(typeCahierChargeIdType);
 		 t.setTypeCritere(t1);;
 				repo.save(t);
-		   return repo.findAll();
+		   return repo.findByOrderByTypeCahierChargesIdDesc();
 	 }
 	
 	
 	
 	public List<TypeCahierCharges> supprimer(Long id) {
 		repo.deleteById(id);
-		return repo.findAll();
+		   return repo.findByOrderByTypeCahierChargesIdDesc();
 	}
 	
 	
 	public List<TypeCahierCharges> getAll(){
-		return repo.findAll();
+		   return repo.findByOrderByTypeCahierChargesIdDesc();
 	}
 	
 	

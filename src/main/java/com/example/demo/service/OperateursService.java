@@ -18,19 +18,19 @@ public class OperateursService {
 	
 	public List<Operateurs> ajouter(Operateurs o) {
 		   repo.save(o);
-		   return repo.findAll();
+		   return repo.findByOrderByOperateursIdDesc();
 	 }
 	
 	
 	public List<Operateurs> supprimer(Long id) {
 		repo.deleteById(id);
-		return repo.findAll();
+		   return repo.findByOrderByOperateursIdDesc();
 	}
 	
 	
 	
 	public List<Operateurs> getAll(){
-		return repo.findAll();
+		   return repo.findByOrderByOperateursIdDesc();
 	}
 	
 	

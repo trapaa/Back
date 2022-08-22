@@ -16,18 +16,18 @@ public class TypeCritereService {
 	
 	public List<TypeCritere> ajouter(TypeCritere t) {
 		   repo.save(t);
-		   return repo.findAll();
+		   return repo.findByOrderByTypeCritereIdDesc();
 	 }
 	
 	
 	public List<TypeCritere> supprimer(Long id) {
 		repo.deleteById(id);
-		return repo.findAll();
+		return repo.findByOrderByTypeCritereIdDesc();
 	}
 	
 	
 	public List<TypeCritere> getAll(){
-		return repo.findAll();
+		return repo.findByOrderByTypeCritereIdDesc();
 	}
 	
 	
