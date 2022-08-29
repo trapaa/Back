@@ -41,6 +41,10 @@ public class VilleService {
 		   return repo.findByOrderByVilleIdDesc();
 	}
 	
+	public List<Ville> getAllbygou(int id){
+		   return repo.findByGouverneratGouverneratId(id);
+	}
+	
 	
 	public Ville getone(int id){
 		return repo.getById(id);

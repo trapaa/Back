@@ -10,5 +10,6 @@ import com.example.demo.entity.TypeCritere;
 
 public interface GouverneratRepository extends JpaRepository<Gouvernerat, Integer >{
 	public List<Gouvernerat> findByOrderByGouverneratIdDesc();
+	public List<Gouvernerat> findByPaysPaysId(Integer id);
 
 }

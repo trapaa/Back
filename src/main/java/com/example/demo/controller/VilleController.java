@@ -39,6 +39,11 @@ public class VilleController {
 	return Ser.getAll();
 		}
 	
+	@GetMapping(value = "/{id}")
+	public List<Ville> getAllbygou(@PathVariable int id){
+	return Ser.getAllbygou(id);
+		}
+	
 	
 	@DeleteMapping(value = "/supp/{id}")
 	public List<Ville> supp(@PathVariable int id){

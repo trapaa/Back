@@ -47,6 +47,10 @@ public class GouverneratService {
 		 return repo.findByOrderByGouverneratIdDesc();
 	}
 	
+	public List<Gouvernerat> getbypays(int id){
+		 return repo.findByPaysPaysId(id);
+	}
+	
 	
 	public Gouvernerat getone(Integer id){
 		return repo.getById(id);

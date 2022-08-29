@@ -308,7 +308,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 		
 		
 		
-		@ManyToOne(fetch = FetchType.EAGER)
+		/*@ManyToOne(fetch = FetchType.EAGER)
 		@JoinColumn(name = "etatId")
 		public Etat getEtat() {
 			return etat;
@@ -316,7 +316,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 		public void setEtat(Etat etat) {
 			this.etat = etat;
-		}
+		}*/
 		
 
 
@@ -331,7 +331,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 		
 		
-		@ManyToOne(fetch = FetchType.LAZY)
+		/*@ManyToOne(fetch = FetchType.LAZY)
 		@JoinColumn(name = "soumissionnaireEtatCompte")
 		public Etat getSoumissionnaireEtatCompte() {
 			return soumissionnaireEtatCompte;
@@ -339,7 +339,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 		public void setSoumissionnaireEtatCompte(Etat soumissionnaireEtatCompte) {
 			this.soumissionnaireEtatCompte = soumissionnaireEtatCompte;
-		}
+		}*/
 
 		public void setGouvernorat(Gouvernerat gouvernorat) {
 			this.gouvernorat = gouvernorat;

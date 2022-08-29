@@ -29,7 +29,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class GouverneratController {
 	
 	@Autowired
-	GouverneratService Ser;
+	GouverneratService Ser; 
 	
 	
 	@GetMapping(path="/all")
@@ -41,6 +41,11 @@ public class GouverneratController {
 	@GetMapping(value = "")
 	public List<Gouvernerat> getAll(){
 	return Ser.getAll();
+		}
+	
+	@GetMapping(value = "/{id}")
+	public List<Gouvernerat> getbypays(@PathVariable Integer id){
+	return Ser.getbypays(id);
 		}
 	
 	
